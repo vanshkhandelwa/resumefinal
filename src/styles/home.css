@@ -1,0 +1,140 @@
+.home-page {
+  overflow-x: hidden;
+}
+
+.hero-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--primary-light);
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: var(--black);
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: var(--dark-gray);
+}
+
+.how-it-works {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.how-it-works h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.step {
+  flex: 1;
+  min-width: 240px;
+  max-width: 280px;
+  padding: 30px 20px;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.step p {
+  color: var(--dark-gray);
+  font-size: 15px;
+}
+
+.features-section {
+  padding: 80px 20px;
+  background-color: var(--light-gray);
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.feature {
+  flex: 1;
+  min-width: 240px;
+  max-width: 280px;
+  padding: 30px 20px;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.feature p {
+  color: var(--dark-gray);
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 32px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  
+  .steps-container, 
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step, 
+  .feature {
+    width: 100%;
+    max-width: 100%;
+  }
+}

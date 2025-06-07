@@ -1,0 +1,105 @@
+.section-analysis {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.section-header h3 {
+  font-size: 22px;
+  margin: 0;
+  color: var(--black);
+}
+
+.score-container {
+  display: flex;
+  align-items: center;
+}
+
+.score-text {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.strengths-weaknesses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.strengths, .weaknesses {
+  flex: 1;
+  min-width: 250px;
+}
+
+.strengths h4, .weaknesses h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.strengths ul, .weaknesses ul {
+  padding-left: 5px;
+  list-style-type: none;
+}
+
+.strengths li, .weaknesses li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.check-icon {
+  color: var(--success-color);
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.alert-icon {
+  color: var(--warning-color);
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.suggestions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.additional-feedback {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.content-recommendations, .formatting-feedback {
+  flex: 1;
+  min-width: 250px;
+}
+
+.content-recommendations h4, .formatting-feedback h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.content-recommendations ul, .formatting-feedback ul {
+  padding-left: 20px;
+}
+
+.content-recommendations li, .formatting-feedback li {
+  margin-bottom: 8px;
+}
